@@ -1,0 +1,156 @@
+.about-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h1 {
+  color: #333;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-section:last-child {
+  margin-bottom: 0;
+}
+
+.about-section h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.about-section p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.initiative-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.initiative-card:hover {
+  transform: translateY(-5px);
+}
+
+.initiative-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.initiative-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  color: #4CAF50;
+  font-size: 36px;
+  margin: 0 0 10px;
+}
+
+.stat-card p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.contact-info {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.donate-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 15px 40px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px 10px;
+  }
+
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-content h1 {
+    font-size: 28px;
+  }
+
+  .about-section h2 {
+    font-size: 22px;
+  }
+
+  .initiatives-grid,
+  .impact-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card h3 {
+    font-size: 30px;
+  }
+} 
